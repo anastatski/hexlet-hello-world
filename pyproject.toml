@@ -7,3 +7,12 @@ requires-python = ">=3.10"
 dependencies = [
     "more-itertools>=10.7.0",
 ]
+
+[dependency-groups]
+dev = [
+    "hexlet-hello-world",
+    "ruff>=0.12.4",
+]
+
+[tool.uv.sources]
+hexlet-hello-world = { workspace = true }
